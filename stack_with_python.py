@@ -16,3 +16,13 @@ class Stack:
   
   def size(self):
     return len(self.items)
+
+
+flase = 'Galaxi Express 999'
+esalf = ''
+s = Stack()
+for f in flase:
+  s.push(f)
+while s.size() > 0:
+  esalf += s.pop()
+print(esalf)
