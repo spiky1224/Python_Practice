@@ -18,11 +18,19 @@ class Stack:
     return len(self.items)
 
 
-flase = 'Galaxi Express 999'
-esalf = ''
-s = Stack()
-for f in flase:
-  s.push(f)
-while s.size() > 0:
-  esalf += s.pop()
-print(esalf)
+st = Stack()
+s = 'Yesterday'
+r = ""
+for i in range(len(s)):
+  st.push(s[i])
+while st.size() > 0:
+  r += st.pop()
+print(r)
+
+list = [1, 2, 3, 4, 5]
+new_list = []
+for i in list:
+  st.push(i)
+while not st.is_empty():
+  new_list.append(st.pop())
+print(new_list)
